@@ -4,13 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e8c78bd-3c58-4b0c-886a-fb313a4e93ab" name="Changes" comment="" />
+    <list default="true" id="6e8c78bd-3c58-4b0c-886a-fb313a4e93ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/models/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/BasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BasicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yabe-blog.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/yabe-blog.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yabe-blog.iws" beforeDir="false" afterPath="$PROJECT_DIR$/yabe-blog.iws" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2P0Imk41YAVsNQXETP12BY9Z0FQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -18,7 +41,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/misaellopes01/Documents/GitHub/yabe-blog/yabe-blog.ipr"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
