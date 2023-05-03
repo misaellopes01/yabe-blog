@@ -8,12 +8,10 @@ html {
     font-family: 'Inter', sans-serif;
 }
 body {
-    display: flex;
-    flex-direction: column;
     padding-left: 7.1rem;
     background: #1C1B1F;
     color: #f0f0f0;
-}
+    }
 a {
     text-decoration: none;
     color: #6EEB83;
@@ -23,19 +21,17 @@ header {
     top: 0;
     left: 0;
     width: 7rem;
-    height: 100vh;
+    height: 100%;
     padding: 2rem 0.5rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     text-align: center;
-
     box-shadow: 0 0 5px green;
 }
 
-header p {
+header > p {
     position: absolute;
     bottom: 0;
     padding-bottom: 1rem;
@@ -75,9 +71,11 @@ header p a:last-child {
 }
 
 main {
-    padding: 2rem;
-    box-shadow: 0 0 5px gray;
-    min-height: 100vh;
+    height: 100%;
+    max-width: 75rem;
+    width: 100%;
+    padding: 2rem 4rem;
+    margin: 0 auto;
 }
 main h1 {
     font-family: 'Sigmar', cursive;
@@ -94,6 +92,9 @@ main h1 img {
 }
 
 /** Post **/
+.post {
+    width: 90%;
+}
 
 .post .post-title {
     margin: 0;
@@ -108,12 +109,12 @@ main h1 img {
 .post .post-metadata {
     color: #C4C4CC;
     display: block;
-    font-size: 70%;
+    font-size: 0.75rem;
     display: inline-block;
 }
 
 .post .post-author {
-    font-size: 130%;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -122,7 +123,6 @@ main h1 img {
 }
 
 .post .post-content {
-    position: relative;
     background: #202024;
     color: #C4C4CC;
     font-weight: 300;
@@ -191,14 +191,16 @@ main h1 img {
 }
 
 h3 {
-    color: #869AB1;
+    color: #C4C4C4;
     font-size: 18px;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
 h3 span {
-    font-size: 80%;
+    font-size: .875rem;
     font-weight: normal;
+
 }
 
 .comment {
@@ -207,7 +209,7 @@ h3 span {
 }
 
 .comment .comment-metadata {
-    color: #869AB1;
+    color: #C4C4C4;
     display: block;
     font-size: 50%;
     display: block;
@@ -217,16 +219,18 @@ h3 span {
 }
 
 .comment .comment-author {
-    font-size: 150%;
+    font-size: .875rem;
     font-weight: bold;
     display: block;
+    color: #C4C4C4;
 }
 
 .comment .comment-content {
     position: relative;
-    background: #E4EAFF;
-    color: #242C58;
-    font-size: 80%;
+    background: transparent;
+    color: #C4C4C4;
+    font-size: 0.9rem;
+    border: 1px solid #C4C4C4;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 100px;
@@ -242,9 +246,118 @@ h3 span {
     height: 0;
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent;
-	border-right: 10px solid #E4EAFF;
+	border-right: 10px solid #C4C4C4;
 	border-left: 0;
 	position: absolute;
 	top: 4px;
-	left: -4px;
+	left: -0.57rem;
+}
+
+/** Pagination **/
+
+#pagination {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    color: #00B37E;
+    font-size: 90%;
+    top: -20px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#pagination a {
+    color: #00B37E;
+    font-size: .785rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#pagination #previous {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#pagination #previous:before {
+    content: '<';
+}
+
+#pagination #next {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#pagination #next:after {
+    content: '>';
+}
+
+/** Form **/
+
+form {
+    width: 50%;
+    padding: 2rem;
+    margin-bottom: 10rem;
+    background: #202024;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form h3 {
+    text-transform: uppercase;
+    font-size: 0.90rem;
+}
+form .error {
+    background: #c00;
+    color: #fff;
+    font-size: 90%;
+    padding: 3px 5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-box-shadow: 0 2px 0 #800;
+}
+
+form p {
+    margin: 5px 0 0 0;
+    font-weight: 300;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form input, form textarea {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #c4c4c4;
+    background-color: #1C1B1F;
+    outline-style: none;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+form input[type=submit]{
+    background: #00B37E;
+    color: #202024;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+
+#captcha{
+    display: block;
+    height: 50px;
+}
+
+.success {
+    background: #67AD10;
+    color: #fff;
+    padding: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-box-shadow: 0 2px 0 #4E840B;
 }

@@ -1,0 +1,55 @@
+#{extends 'main.html' /}
+#{set title:post.title /}
+
+<ul id="pagination">
+    #{if post.previous()}
+    <li id="previous">
+        <a href="@{Application.show(post.previous().id)}">
+            ${post.previous().title}
+        </a>
+    </li>
+    #{/if}
+    #{if post.next()}
+    <li id="next">
+        <a href="@{Application.show(post.next().id)}">
+            ${post.next().title}
+        </a>
+    </li>
+    #{/if}
+</ul>
+#{if flash.success}
+<p class="success">${flash.success}</p>
+#{/if}
+
+#{display post:post, as:'full' /}
+
+
+
+#{form @Application.postComment(post.id)}
+
+    #{ifErrors}
+    <p class="error">
+        All fields are required!
+    </p>
+    #{/ifErrors}
+
+    <h3>Post a comment</h3>
+    <input type="text" name="author" id="author" placeholder="Place your name" required />
+    <textarea name="content" id="content" placeholder="Comment here..." required></textarea>
+    <input type="submit" value="Submit" />
+#{/form}
+
+<script type="text/javascript" charset="utf-8">
+    $(function() {
+        // Expose the form
+        $('form').click(function() {
+            $('form').expose({api: true}).load();
+        });
+
+        // If there is an error, focus to form
+        if($('form .error').size()) {
+            $('form').expose({api: true, loadSpeed: 0}).load();
+            $('form input[type=text]').get(0).focus();
+        }
+    });
+</script>

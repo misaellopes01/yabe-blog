@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e8c78bd-3c58-4b0c-886a-fb313a4e93ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Bootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/tags/display.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/initial-data.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/Application/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Application/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Application/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Application/sayHello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/display.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/display.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/BasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BasicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yabe-blog.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/yabe-blog.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yabe-blog.iws" beforeDir="false" afterPath="$PROJECT_DIR$/yabe-blog.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,17 +44,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/misaellopes01/Documents/GitHub/yabe-blog/yabe-blog.ipr",
-    "settings.editor.selected.configurable": "ColorHighlighterConfig",
-    "settings.editor.splitter.proportion": "0.32223415"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/misaellopes01/Documents/GitHub/yabe-blog/yabe-blog.ipr&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ColorHighlighterConfig&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.32223415&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
