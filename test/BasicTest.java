@@ -8,7 +8,7 @@ public class BasicTest extends UnitTest {
     public void setup() {
         Fixtures.deleteDatabase();
     }
-    
+
     @Test
     public void fullTest() {
         Fixtures.loadModels("data.yml");

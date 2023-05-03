@@ -10,14 +10,17 @@ import models.*;
 
 public class Application extends Controller {
 
+    @Before
+    static void addDefaults() {
+        renderArgs.put("blogTitle", Play.configuration.getProperty("blog.title"));
+        renderArgs.put("blogBaseBrand", Play.configuration.getProperty("blog.BaseBrand"));
+    }
+
     public static void index() {
-        render();
+        Post frontPost = Post.find("order by postedAt desc").first();
+        List<Post> olderPosts = Post.find("order by postedAt desc").from(1).fetch(10);
+
+        render(frontPost, olderPosts);
     }
-    public static void sayHello(@Required String myName) {
-        if(validation.hasErrors()) {
-            flash.error("Oops, please enter your name!");
-            index();
-        }
-        render(myName);
-    }
+
 }
